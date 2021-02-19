@@ -189,7 +189,7 @@ namespace Phoneword
                 {
                     if(liczba[0].Length > 0)
                     {
-                        liczba[0] = liczba[0].Substring(0, liczba[0].Length-1);
+                        liczba[0] = liczba[0][0..^1];
                         wynik_field.Text = liczba[0];
                     }
                     if(liczba[0].Length == 0 && zmiana == true)
@@ -201,7 +201,7 @@ namespace Phoneword
                 {
                     if(liczba[1].Length > 0)
                     {
-                        liczba[1] = liczba[1].Substring(0, liczba[1].Length - 1);
+                        liczba[1] = liczba[1][0..^1];
                         wynik_field.Text = liczba[1];
                     }
                     if (liczba[1].Length == 0 && zmiana == true)

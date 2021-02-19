@@ -56,6 +56,9 @@ namespace Core
                 }
                 else
                 {
+                    Phoneword.MainActivity.liczba[0] = "";
+                    Phoneword.MainActivity.liczba[1] = "";
+                    Phoneword.MainActivity.znak = "";
                     return "Nie można dzielić przez zero";
                 }
                    
@@ -135,7 +138,7 @@ namespace Core
                 }
                 else
                 {
-                    liczba[0] = liczba[0].Substring(1);
+                    liczba[0] = liczba[0][1..];
                 }
                 temp = liczba[0];
             }
@@ -147,7 +150,7 @@ namespace Core
                 }
                 else
                 {
-                    liczba[1] = liczba[0].Substring(1);
+                    liczba[1] = liczba[0][1..];
                 }
 
                 temp = liczba[1];
