@@ -59,6 +59,7 @@ namespace Core
                     Phoneword.MainActivity.liczba[0] = "";
                     Phoneword.MainActivity.liczba[1] = "";
                     Phoneword.MainActivity.znak = "";
+                    Phoneword.MainActivity.przecinek_zmienna = false;
                     return "Nie można dzielić przez zero";
                 }
                    
