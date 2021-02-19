@@ -4,10 +4,8 @@ using System;
 
 namespace Core
 {
-
     public class Calc
     { 
-
         public static string Policz()
         {
             double wynik = 0;
@@ -93,7 +91,7 @@ namespace Core
             return wynik.ToString();
         }
 
-        public static string wynik_drukuj(string temp)
+        public static string Wynik_drukuj(string temp)
         {
             if (string.IsNullOrWhiteSpace(temp))
             {

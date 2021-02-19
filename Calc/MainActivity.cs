@@ -19,9 +19,7 @@ namespace Phoneword
         {
             base.OnCreate(savedInstanceState);
 
-
             SetContentView(Calc.Resource.Layout.activity_main);
-
 
             TextView wynik_field = FindViewById<TextView>(Calc.Resource.Id.wynik_field);
             Button btn0 = FindViewById<Button>(Calc.Resource.Id.btn0);
@@ -49,52 +47,52 @@ namespace Phoneword
 
             btn0.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("0", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("0", liczba, znak).ToString());
             };
 
             btn1.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("1", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("1", liczba, znak).ToString());
             };
 
             btn2.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("2", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("2", liczba, znak).ToString());
             };
 
             btn3.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("3", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("3", liczba, znak).ToString());
             };
 
             btn4.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("4", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("4", liczba, znak).ToString());
             };
 
             btn5.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("5", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("5", liczba, znak).ToString());
             };
 
             btn6.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("6", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("6", liczba, znak).ToString());
             };
 
             btn7.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("7", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("7", liczba, znak).ToString());
             };
 
             btn8.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("8", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("8", liczba, znak).ToString());
             };
 
             btn9.Click += (sender, e) =>
             {
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba("9", liczba, znak).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba("9", liczba, znak).ToString());
             };
 
 
@@ -173,14 +171,14 @@ namespace Phoneword
                     zmiana = false;
                 }
 
-                wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Zmiana_znaku(liczba, znak, zmiana).ToString());
+                wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Zmiana_znaku(liczba, znak, zmiana).ToString());
             };
 
             przecinek.Click += (sender, e) =>
             {
                 if(przecinek_zmienna == false)
                 {
-                    wynik_field.Text = Core.Calc.wynik_drukuj(Core.Calc.Liczba(".", liczba, znak).ToString());
+                    wynik_field.Text = Core.Calc.Wynik_drukuj(Core.Calc.Liczba(".", liczba, znak).ToString());
                     przecinek_zmienna = true;
                 }
             };
@@ -217,7 +215,7 @@ namespace Phoneword
         private static string Wykonaj()
         {
             string temp = Core.Calc.Policz();
-            return Core.Calc.wynik_drukuj(temp);
+            return Core.Calc.Wynik_drukuj(temp);
         }
     }
 }
