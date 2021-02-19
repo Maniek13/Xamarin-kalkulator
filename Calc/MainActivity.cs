@@ -194,9 +194,9 @@ namespace Phoneword
                         liczba[0] = liczba[0].Substring(0, liczba[0].Length-1);
                         wynik_field.Text = liczba[0];
                     }
-                    if(liczba[0].Length == 0 && przecinek_zmienna == true)
+                    if(liczba[0].Length == 0 && zmiana == true)
                     {
-                        przecinek_zmienna = false;
+                        zmiana = false;
                     }
                 }
                 else
@@ -206,9 +206,9 @@ namespace Phoneword
                         liczba[1] = liczba[1].Substring(0, liczba[1].Length - 1);
                         wynik_field.Text = liczba[1];
                     }
-                    if (liczba[1].Length == 0 && przecinek_zmienna == true)
+                    if (liczba[1].Length == 0 && zmiana == true)
                     {
-                        przecinek_zmienna = false;
+                        zmiana = false;
                     }
                 }
             };
