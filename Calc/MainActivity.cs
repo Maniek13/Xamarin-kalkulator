@@ -189,6 +189,10 @@ namespace Phoneword
                 {
                     if(liczba[0].Length > 0)
                     {
+                        if (liczba[0].Substring(liczba[0].Length-1) == ".")
+                        {
+                            przecinek_zmienna = false;
+                        }
                         liczba[0] = liczba[0][0..^1];
                         wynik_field.Text = liczba[0];
                     }
@@ -201,6 +205,10 @@ namespace Phoneword
                 {
                     if(liczba[1].Length > 0)
                     {
+                        if (liczba[1].Substring(liczba[0].Length-1) == ".")
+                        {
+                            przecinek_zmienna = false;
+                        }
                         liczba[1] = liczba[1][0..^1];
                         wynik_field.Text = liczba[1];
                     }
